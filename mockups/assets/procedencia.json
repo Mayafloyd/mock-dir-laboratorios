@@ -1,0 +1,15 @@
+{
+  "sede-base.css": {
+    "fuente": "articulos-sede-medellin/ccs plantilla/sede.css",
+    "sha256": "e9fb5a0da67f5978d44e8f71d0718b7a8b2302cb53df0d5e52fe07adcc01a67c",
+    "uso": "copia sin cambios; solo preview"
+  },
+  "ancizar-*.woff2": {
+    "fuente": "articulos-sede-medellin/system-design/sistema-diseno-unal-medellin.html",
+    "uso": "fuentes embebidas extraídas del sistema entregado"
+  },
+  "escudoUnal.png y sealColombia.png": {
+    "fuente": "https://direcciondelaboratorios.medellin.unal.edu.co/templates/unal/images/",
+    "uso": "identidad institucional de referencia"
+  }
+}
