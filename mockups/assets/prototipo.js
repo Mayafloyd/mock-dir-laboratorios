@@ -23,3 +23,7 @@ if($('#labs-filter')){
 }
 const nav=$('.unal-quicknav');if(nav&&'IntersectionObserver'in window){const links=[...nav.querySelectorAll('a')];const observer=new IntersectionObserver(entries=>{for(const e of entries)if(e.isIntersecting){links.forEach(a=>{if(a.hash==='#'+e.target.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});}},{rootMargin:'-10% 0px -55% 0px'});links.forEach(a=>{const target=document.getElementById(a.hash.slice(1));if(target)observer.observe(target);});}
 })();
+// Navegación por divulgación: clic, teclado, Escape y cierre fuera del menú.
+(()=>{const menus=[...document.querySelectorAll('.preview-dropdown')];
+for(const menu of menus){const control=menu.querySelector('summary');control.addEventListener('click',()=>{if(!menu.open)menus.forEach(other=>{if(other!==menu)other.open=false;});});menu.addEventListener('keydown',e=>{if(e.key==='Escape'){menu.open=false;control.focus();e.stopPropagation();}});menu.addEventListener('focusout',()=>{setTimeout(()=>{if(!menu.contains(document.activeElement))menu.open=false;},0);});}
+document.addEventListener('click',e=>{menus.forEach(menu=>{if(!menu.contains(e.target))menu.open=false;});});})();

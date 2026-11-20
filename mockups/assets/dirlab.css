@@ -92,3 +92,10 @@
 .dirlab[data-page="contacto"] .inside-process li:before{counter-increment:contact;content:"0" counter(contact);color:var(--unal-azul-subtitulo);font-weight:bold}
 @media(max-width:800px){.dirlab .inside-story-layout{grid-template-columns:1fr}.dirlab .inside-tools{padding:28px!important}}
 @media(max-width:700px){.dirlab:not([data-page="index"]) .dl-page-intro{gap:24px;margin-bottom:28px;padding-top:0}.dirlab:not([data-page="index"]) .dl-page-intro--photo img{height:220px}.dirlab .inside-block{padding:26px 20px!important;margin-top:36px!important}.dirlab .inside-overview,.dirlab .inside-story,.dirlab .inside-archive{padding-inline:0!important}.dirlab .inside-story-layout .dl-panel{padding:24px}.dirlab .inside-story-layout img{height:230px}.dirlab .inside-choices{gap:16px}.dirlab .inside-choices a.sede-card{padding:24px}.dirlab:not([data-page="index"]) .dl-detail aside{order:0}.dirlab .inside-block>h2,.dirlab:not([data-page="index"]) .dl-section-head h2{font-size:27px}.dirlab[data-page="servicios"] .dl-search,.dirlab[data-page="laboratorios"] .dl-search{padding:24px 20px}.dirlab[data-page="servicios"] .dl-result{padding:24px 20px}.dirlab .inside-process .dl-steps li{padding-left:56px}}
+/* Cifras del Sistema de Laboratorios en el hero del inicio */
+.dirlab .home-cifras{position:absolute;top:50%;right:max(48px,calc((100% - 1344px)/2));transform:translateY(-50%);width:min(360px,34%);padding:24px 28px;background:rgba(18,84,40,.88);border:1px solid rgba(255,255,255,.25);border-radius:6px;color:var(--unal-blanco)}
+.dirlab .home-cifras h2{font-size:17px;line-height:1.3;font-weight:700;color:var(--unal-blanco);margin:0 0 16px}
+.dirlab .home-cifras dl{margin:0;display:grid;gap:14px}
+.dirlab .home-cifras dt{font-size:clamp(26px,2.4vw,34px);line-height:1.1;font-weight:700;color:#f2c230}
+.dirlab .home-cifras dd{margin:2px 0 0;font-size:14px;line-height:1.35;color:var(--unal-blanco)}
+@media(max-width:700px){.dirlab .home-panorama figcaption{bottom:auto;height:330px}.dirlab .home-cifras{position:static;transform:none;width:auto;border-radius:0;border:0;padding:24px 20px}}
